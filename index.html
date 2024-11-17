@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+    
+<script disable-devtool-auto='true' src=   
+  'https://cdn.jsdelivr.net/npm/disable-devtool' clear-log='true'   
+  disable-select='true' disable-copy='true' disable-cut='true'   
+  disable-paste='true'></script>
+
+<script>
+
+var countDownDate = new Date("Nov 30, 2024 23:00:25").getTime();
+
+var x = setInterval(function() {
+
+
+  var now = new Date().getTime();
+    
+
+  var distance = countDownDate - now;
+    
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+
+if (distance > 0) {
+    clearInterval(x);
+  }
+else {
+		location.replace('https://www.google.com/')
+	}
+}, 1000);
+</script>
+  <meta charset="utf-8">
+  <title>MY TV</title>
+ <link href="https://vjs.zencdn.net/8.14.0/video-js.css" rel="stylesheet">
+
+<link href="
+https://cdn.jsdelivr.net/npm/videojs-logobrand@1.0.3/src/videojs.logobrand.min.css
+" rel="stylesheet">
+<style>
+    body {
+           margin: 0px
+         }
+         .video-js  {
+              position: absolute !important
+             }
+             
+         .video-js {
+              min-height: 100%;
+             max-height: 100%;
+             
+              min-width: 100%;
+             max-width: 100%
+             }
+
+
+</style>
+</head>
+<body>
+<video id="videojs-marquee-overlay-player" class="video-js vjs-default-skin" controls   preload="auto" autoplay width="848" height="480"  data-setup='{"playbackRates": [1, 1.5, 2] }'>
+  <source src="https://muzzik-live.morescreens.com/mts-5/playlist.m3u8" type="application/x-mpegurl">
+</video>
+
+  <script src="https://vjs.zencdn.net/8.14.0/video.min.js"></script>
+
+
+<script src="videojs-marquee-overlay.js"></script>
+<script src="
+https://cdn.jsdelivr.net/npm/videojs-contrib-hls@5.15.0/dist/videojs-contrib-hls.min.js
+"></script>
+
+<script src="
+https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js
+"></script>
+
+<script src="videojs5-hlsjs-source-handler.js"></script>
+<script src="
+https://cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js
+"></script>
+
+<script src="
+https://cdn.jsdelivr.net/npm/videojs-logobrand@1.0.3/src/videojs.logobrand.min.js
+"></script>
+<script>
+  (function (window, videojs) {
+    var player = window.player = videojs('videojs-marquee-overlay-player');
+    player.marqueeOverlay({
+      contentOfMarquee: 
+"✋మీరు చూస్తున్నారు మై టీవీ లోకల్ ఛానల్. కంప్యూటర్ అవసరం లేదు, ప్లే స్టేషన్ సాఫ్ట్వేర్ అవసరం లేదు ✋MY TV మోహన్ గారి ద్వారా త్వరలో కొత్త APP రాబోతుంది.ఈ APP మూలం గా ఆపరేటర్ లకు చాలా మేలు కలుగుతుందని ఆశిస్తున్నాను.వివరాలు త్వరలో  మన వర ప్రసాద్ టెక్నికల్ గ్రూప్ లలో మాత్రమే✋MY TV వారి మరొక అద్భుతం✋మీరే మీ సెల్ ద్వారా, మీ ఛానల్ లో, మీ వూర్లోని ప్రోగ్రామ్స్  అతి తక్కువ ఖర్చు తో LIVE పంపండి.మీ నెట్ వర్క్ కు తిరుగులేదు అని నిరూపించుకోండి.వివరాలు త్వరలో.....మన ✋ వర ప్రసాద్ టెక్నికల్ గ్రూప్ లలో ✋",
+      
+      
+      position: "bottom",
+      direction: "left",
+      duration: 15000,
+      backgroundcolor: "red",
+      color: "#fefefe"
+    });
+    player.qualityPickerPlugin();
+    
+player.logobrand({
+    image: 'splash.png', // image to use
+    destination: '', // destination when clicked
+    autoHide: false, // default is true
+    width: '70px', // default is 'auto'
+    height: 'auto', // default is 'auto'
+    opacity: 1.0, // default is 1.0
+    position: 'absolute', // default is 'static'
+    top: '20px',
+    right: '30px'
+});
+    
+    
+    
+    
+
+  }(window, window.videojs));
+
+</script>
+<style>
+  .vjs-emre-marquee {
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    z-index:9998;
+    position:absolute;
+    font-size: 20px;
+  }
+  .vjs-control{
+    z-index:9999;
+  }
+</style>
+
+</body>
+</html>
