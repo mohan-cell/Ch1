@@ -1,0 +1,34 @@
+
+
+
+
+/* Followed */
+.follow{
+  position:fixed;
+  right:80px;
+  top:40px;
+}
+.follow img {
+    width: 80px;
+    height: 40px;
+    border: 1px solid #3F51B5;
+
+}
+
+
+      #marquee {
+        position: fixed;
+        overflow: hidden;
+        margin: 0;
+        padding: 7px 0;
+        font-size: 20px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #c80000;
+        color: #ffffff;
+      }
+    
+
+
+
