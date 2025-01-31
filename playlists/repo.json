@@ -1,0 +1,27 @@
+{
+    "id": "rtv",
+    "defaultPlaylists": [
+        
+        "speedrun/gdq/agdq2013.min.json",
+        "speedrun/gdq/sgdq2013.min.json",
+        "speedrun/gdq/agdq2014.min.json",
+        "speedrun/gdq/sgdq2014.min.json",
+        "speedrun/gdq/agdq2015.min.json",
+        "speedrun/gdq/sgdq2015.min.json",
+        "speedrun/gdq/agdq2016.min.json",
+        "speedrun/gdq/sgdq2016.min.json",
+        "speedrun/gdq/agdq2017.min.json",
+        "speedrun/gdq/sgdq2017.min.json",
+        "speedrun/gdq/agdq2018.min.json",
+        "speedrun/gdq/sgdq2018.min.json",
+        "speedrun/gdq/agdq2019.min.json"
+
+    ],
+    "extraPlaylists": [
+        
+        "speedrun/gdq/agdq2011.min.json",
+        "speedrun/gdq/agdq2012.min.json",
+        "speedrun/gdq/sgdq2012.min.json"
+
+    ]
+}
