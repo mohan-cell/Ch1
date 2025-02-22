@@ -499,7 +499,7 @@ var rtv = {
                         width: '100%',
                         playerVars: {
                             'autoplay': 1,
-                            'controls': 0,
+                            'controls': 1,
                             'rel': 0,
                                   'fs': 0,
                              'mute': 1,
