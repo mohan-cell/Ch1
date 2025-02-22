@@ -52,7 +52,7 @@ var rtv = {
             this.customs();
             await this.repos();
 
-            this.defaultPlaylists = this.defaultPlaylists.concat(this.extraPlaylists).sort();
+
 
             this.save();
         },
@@ -111,17 +111,17 @@ var rtv = {
                     this.repoCache[data.id] = data;
 
                     data.defaultPlaylists = data.defaultPlaylists.map(i=>`${data.id}:${i}`)
-                    data.extraPlaylists = data.extraPlaylists.map(i=>`${data.id}:${i}`)
+                    
 
                     $.extend(this.defaultPlaylists, data.defaultPlaylists)
-                    $.extend(this.extraPlaylists, data.extraPlaylists)
+
                 } catch (e) {
                     console.error(`Could not load ${repo}`, e)
                 }
             }
         },
-        defaultPlaylists: [],
-        extraPlaylists: []
+        defaultPlaylists: []
+
     },
     init: function(path) {
         this.player.create(path);
@@ -694,15 +694,14 @@ var rtv = {
     },
     
 
+
     
     menu: {
         spawn: function() {
             var menu = $("<div id='menu'/>");
             //{id: "openGuide", text: "Open MY TV Guide", class: "pointer"}).click(function() { ;
 
-            $("<i />", {class: "fa fa-th-list", title: "Open MY TV Guide"}).click(function() { rtv.guide.open(); }).appendTo(menu);
-            
-            $("<hr>").appendTo(menu)
+
             $("<i />", {class: "fa fa-expand", title: "Toggle Fullscreen"}).click(function() {
                 if (document.fullscreenElement == null) {
                     $("body")[0].requestFullscreen()
@@ -720,36 +719,15 @@ var rtv = {
             }).appendTo(menu);
             
             
-            $("<hr>").appendTo(menu)
-            $("<i />", {class: "fa fa-close", title: "Auto-hide sidebar"}).click(function() {
-                $("#menu").toggleClass("autohide");
-                $(this).toggleClass("fa-check fa-close");
-            }).appendTo(menu);
+
             
             
-            $("<i />", {class: "fa fa-refresh", title: "Resync Players"}).click(function() {
-                //Stolen from guide
-                $("[id^=window-player]").each(function() {rtv.player.players[$(this).data()["player-index"]].resync();});
-            }).appendTo(menu);
-
-            $("<i />", {class: "fa fa-window-restore", title: "Inline popout"}).click(function() {
-                $("[id^=window-player]").dialog({
-                    close: function() {
-                        $("[id^=window-player]")
-                        .removeClass("ui-dialog-content ui-widget-content")
-                        .css({width:'','min-width':'','max-width':'',height:'','min-height':'','max-height':''})
-                        .appendTo("#container");
-                        $(this).dialog('destroy');
-                    }
-                });
-            })//.appendTo(menu); //TO-DO: PERFECT.
-
-            this.share().appendTo(menu);
 
 
 
-            $("<i />", {class: "fa fa-bed", title: "Sleep Timer"}).click(() => this.sleep.dialog()).appendTo(menu);
-            $("<div />", {id: 'recents'}).appendTo(menu);
+
+
+
 
             menu.tooltip({
                 position: { my: "left center", at: "right+10% center", collision: "fit"}
