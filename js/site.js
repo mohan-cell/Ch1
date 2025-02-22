@@ -499,10 +499,10 @@ var rtv = {
                         width: '100%',
                         playerVars: {
                             'autoplay': 1,
-                            'controls': 1,
+                            'controls': 0,
                             'rel': 0,
                                   'fs': 0,
-                             'mute': 1,
+                             'mute': 0,
                              
                             'autohide': 1,
                             'start': current.seek_to,
