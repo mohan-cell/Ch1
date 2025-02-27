@@ -29,6 +29,26 @@
         color: #ffffff;
       }
     
+        .slider-container {
+            position: fixed;
+bottom :50px;
+        left: 0;
+        right: 0;
 
+            width: 100%;
+            height: 80px;
+            margin: 0px auto;
+        }
+        .slider-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+        .slider-image.active {
+            display: block;
+        }
 
 
