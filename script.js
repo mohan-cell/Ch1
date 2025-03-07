@@ -1,26 +1,11 @@
-      var $marquee = document.getElementById('marquee');
-      var marquee = (window.m = new dynamicMarquee.Marquee($marquee, {
-        rate: -100,
-      }));
-      window.l = dynamicMarquee.loop(
-        marquee,
-        [
-          function () {
-            return 'పార్వతీపురం జిల్లా కేంద్రంగా BMC లోకల్ ఛానల్ త్వరలో ప్రారంభం..... న్యూస్, ఎంటర్టైన్మెంట్ పాటు లైవ్ టెలికాస్ట్ ప్రారంభం...';
-          },
-          function () {
-            return 'పార్వతీపురం పట్టణ మరియు పరిసర ప్రాంత ప్రజలకు శుభవార్త... అతి తక్కువ ధరకే హై స్పీడ్ ఇంటర్నెట్ తో పాటు HD లైవ్  చానల్స్ లభించును.... 30MBPS స్పీడ్ తో పాటు HD లైవ్ చానల్స్ కేవలం...550 రూపాయలు మాత్రమే.... వివరములకు.. BM కమ్యూనికేషన్, మెయిన్ రోడ్, పార్వతీపురం...08963-222222, 8500467888..';
-          },
-          function () {
-            return 'పార్వతీపురం జిల్లా కేంద్రంగా BMC లోకల్ ఛానల్ త్వరలో ప్రారంభం..... న్యూస్, ఎంటర్టైన్మెంట్ పాటు లైవ్ టెలికాస్ట్ ప్రారంభం.';
-          },
-          function () {
-            return  'మీరు చూస్తున్నది మై టీవీ వారి ఆన్లైన్ లోకల్ ఛానల్.లైవ్ ప్రోగ్రామ్స్ అతి త్వరలో.కంప్యూటర్, లోకల్ ఛానల్ సాఫ్ట్వేర్ అవసరం లేదు. మొబైల్ ఫోన్ తో మేనేజ్ చేయవచ్చు. వివరములు కొరకు సంప్రదించండి ph:8096592423......';
-          },
-        ],
-        function () {
-          var $separator = document.createElement('div');
-          $separator.innerHTML = '&nbsp•&nbsp';
-          return $separator;
-        }
-      );
+    
+        fetch('https://api.jsonsilo.com/public/d9f4aca3-cf62-4322-95d4-700e4b494eb0')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('marquee').innerHTML = data;
+            })
+            .catch(error => {
+                document.getElementById('error-message').innerText = 'Error loading text file: ' + error;
+                new bootstrap.Modal(document.getElementById('errorModal')).show();
+            });
+    
